@@ -1,0 +1,23 @@
+﻿<Application x:Class="DXFViewer.App"
+             xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:local="clr-namespace:DXFViewer">
+    <Application.Resources>
+        <ResourceDictionary>
+            <ResourceDictionary.MergedDictionaries>
+
+                <!--Bootstrapper-->
+                <ResourceDictionary>
+                    <local:AppBootstrapper x:Key="bootstrapper" />
+                </ResourceDictionary>
+
+                <!--Resource-->
+                <ResourceDictionary Source="Dictionaries/Styles.xaml"/>
+                <ResourceDictionary Source="Dictionaries/DataTemplates.xaml"/>
+                <ResourceDictionary Source="Dictionaries/Others.xaml"/>
+                <ResourceDictionary Source="Dictionaries/Colors.xaml"/>
+                
+            </ResourceDictionary.MergedDictionaries>
+        </ResourceDictionary>
+    </Application.Resources>
+</Application>

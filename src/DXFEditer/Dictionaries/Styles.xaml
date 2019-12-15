@@ -1,0 +1,60 @@
+﻿<ResourceDictionary xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+                    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+                    xmlns:sys="clr-namespace:System;assembly=mscorlib"
+                    xmlns:local="clr-namespace:DXFViewer">
+
+    <Style x:Key="GlueVavleOne" TargetType="Shape">
+        <Setter Property="Stroke" Value="White"/>
+        <Style.Triggers>
+            <Trigger Property="local:ShapeHelper.IsSelected" Value="true">
+                <Setter Property="Stroke" Value="Red"/>
+            </Trigger>
+            <Trigger Property="IsMouseOver" Value="true">
+                <Setter Property="StrokeThickness" Value="3.5"/>
+            </Trigger>
+        </Style.Triggers>
+    </Style>
+
+    <Style x:Key="GlueVavleTwo" TargetType="Shape">
+        <Setter Property="Stroke" Value="Yellow"/>
+        <Style.Triggers>
+            <Trigger Property="local:ShapeHelper.IsSelected" Value="true">
+                <Setter Property="Stroke" Value="Red"/>
+            </Trigger>
+            <Trigger Property="IsMouseOver" Value="true">
+                <Setter Property="StrokeThickness" Value="3.5"/>
+            </Trigger>
+        </Style.Triggers>
+    </Style>
+
+    <Style x:Key="GlueVavleThree" TargetType="Shape">
+        <Setter Property="Stroke" Value="Blue"/>
+        <Style.Triggers>
+            <Trigger Property="local:ShapeHelper.IsSelected" Value="true">
+                <Setter Property="Stroke" Value="Red"/>
+            </Trigger>
+            <Trigger Property="IsMouseOver" Value="true">
+                <Setter Property="StrokeThickness" Value="3.5"/>
+            </Trigger>
+        </Style.Triggers>
+    </Style>
+
+    <Style x:Key="GlueVavleFour" TargetType="Shape">
+        <Setter Property="Stroke" Value="Green"/>
+        <Style.Triggers>
+            <Trigger Property="local:ShapeHelper.IsSelected" Value="true">
+                <Setter Property="Stroke" Value="Red"/>
+            </Trigger>
+            <Trigger Property="IsMouseOver" Value="true">
+                <Setter Property="StrokeThickness" Value="3.5"/>
+            </Trigger>
+        </Style.Triggers>
+    </Style>
+    
+    <Style x:Key="SelectRectStyle" TargetType="Shape">
+        <Setter Property="Stroke" Value="White"/>
+        <Setter Property="Fill" Value="MediumAquamarine"/>
+        <Setter Property="Opacity" Value="0.5"/>
+    </Style>
+
+</ResourceDictionary>

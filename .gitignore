@@ -1,0 +1,7 @@
+# 只忽略目录，不忽略文件
+obj/
+bin/
+.vs/
+packages/
+Container/
+Resources/

@@ -1,0 +1,13 @@
+<Window x:Class="CaliburnTest.ShellView"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:cal="http://www.caliburnproject.org">
+
+    <Grid Background="White">
+        <Button x:Name="Hello" Content="Hello Caliburn Micro!"
+                VerticalAlignment="Center"
+                HorizontalAlignment="Center"
+                cal:Message.Attach="[Event Click]=[Action ButtonClick(Hello.Name)];"/>
+    </Grid>
+
+</Window>
